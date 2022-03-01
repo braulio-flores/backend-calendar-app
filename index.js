@@ -29,7 +29,13 @@ app.use( express.json() );
 
 
 
-app.use('/api/auth', require('./routes/auth'));
+app.use('/api/auth', require('./routes/auth')); //MIDDLEWARE PARA LAS RUTAS DE USUARIOS
+
+
+
+app.use('/api/events', require('./routes/events')); //MIDDLEWARE PARA LAS RUTAS DE EVENTOS
+
+
 
 //ESCUCHAR PETICIONES
 //BACKEND SERVER MONTADO
